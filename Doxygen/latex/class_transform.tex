@@ -1,0 +1,188 @@
+\hypertarget{class_transform}{}\doxysection{Transform Class Reference}
+\label{class_transform}\index{Transform@{Transform}}
+
+
+transform component of game objects.  
+
+
+
+
+{\ttfamily \#include $<$Transform.\+hpp$>$}
+
+Inheritance diagram for Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transform_aa08ca4266efabc768973cdeea51945ab}{Transform}} ()
+\item 
+\mbox{\hyperlink{class_transform_a0b59b0565b39bd410f4e3f2c319adccb}{Transform}} (\mbox{\hyperlink{class_vector2}{Vector2}} pos)
+\begin{DoxyCompactList}\small\item\em Construction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform_a9fb589a9cfea2025a8619666cbb76019}{Transform}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Construction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transform_aa72e286c069850db80927b0e6554cd3e}\label{class_transform_aa72e286c069850db80927b0e6554cd3e}} 
+\mbox{\hyperlink{class_transform_aa72e286c069850db80927b0e6554cd3e}{$\sim$\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Destruction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transform_ad441f4a3a50d257372f40f98eee97feb}\label{class_transform_ad441f4a3a50d257372f40f98eee97feb}} 
+void \mbox{\hyperlink{class_transform_ad441f4a3a50d257372f40f98eee97feb}{Start}} () override
+\begin{DoxyCompactList}\small\item\em run at the first frame of game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_a314828d7ca05056d4ea51561c73d0692}{Update}} (int dt) override
+\item 
+\mbox{\Hypertarget{class_transform_a97877497aa7a3ec8f341276d93249237}\label{class_transform_a97877497aa7a3ec8f341276d93249237}} 
+void \mbox{\hyperlink{class_transform_a97877497aa7a3ec8f341276d93249237}{Render}} () override
+\begin{DoxyCompactList}\small\item\em render on screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_ab49fa8f78387c9a81b17bcc0a61652cc}{Set\+Position}} (\mbox{\hyperlink{class_vector2}{Vector2}} p)
+\item 
+\mbox{\hyperlink{class_vector2}{Vector2}} \mbox{\hyperlink{class_transform_a1f477dd74f4f2eeeabccb3fbde353a29}{Get\+Position}} () const
+\item 
+void \mbox{\hyperlink{class_transform_a796f888a3e10f7120ceaed5915604c85}{Apply\+Force}} (\mbox{\hyperlink{class_vector2}{Vector2}} force)
+\item 
+void \mbox{\hyperlink{class_transform_a41ce3cc45cd59cf34ffa76d59710c066}{Apply\+Impulse}} (\mbox{\hyperlink{class_vector2}{Vector2}} impulse)
+\item 
+void \mbox{\hyperlink{class_transform_a28f39f387e6f4c4443bc431c857b31c5}{Set\+Size}} (\mbox{\hyperlink{class_vector2}{Vector2}} size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_transform_a7972419ad29c9634bfdbe14a2f16ddcd}\label{class_transform_a7972419ad29c9634bfdbe14a2f16ddcd}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} {\bfseries scale}
+\item 
+\mbox{\Hypertarget{class_transform_a083771bf2b9de623261153dc1b7a6514}\label{class_transform_a083771bf2b9de623261153dc1b7a6514}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} \mbox{\hyperlink{class_transform_a083771bf2b9de623261153dc1b7a6514}{position}}
+\begin{DoxyCompactList}\small\item\em scale of the game\+Object, when it changes, both sprite and collider will change. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+transform component of game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_transform_aa08ca4266efabc768973cdeea51945ab}\label{class_transform_aa08ca4266efabc768973cdeea51945ab}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+/brief \mbox{\Hypertarget{class_transform_a0b59b0565b39bd410f4e3f2c319adccb}\label{class_transform_a0b59b0565b39bd410f4e3f2c319adccb}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_a9fb589a9cfea2025a8619666cbb76019}\label{class_transform_a9fb589a9cfea2025a8619666cbb76019}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Construction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x of position \\
+\hline
+{\em y} & yof position \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transform_a796f888a3e10f7120ceaed5915604c85}\label{class_transform_a796f888a3e10f7120ceaed5915604c85}} 
+\index{Transform@{Transform}!ApplyForce@{ApplyForce}}
+\index{ApplyForce@{ApplyForce}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{ApplyForce()}{ApplyForce()}}
+{\footnotesize\ttfamily void Transform\+::\+Apply\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{force }\end{DoxyParamCaption})}
+
+/brief Apply force to the game object in physical world
+
+
+\begin{DoxyParams}{Parameters}
+{\em force} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_a41ce3cc45cd59cf34ffa76d59710c066}\label{class_transform_a41ce3cc45cd59cf34ffa76d59710c066}} 
+\index{Transform@{Transform}!ApplyImpulse@{ApplyImpulse}}
+\index{ApplyImpulse@{ApplyImpulse}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{ApplyImpulse()}{ApplyImpulse()}}
+{\footnotesize\ttfamily void Transform\+::\+Apply\+Impulse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{impulse }\end{DoxyParamCaption})}
+
+/brief Apply impulse to the game object in physical world
+
+
+\begin{DoxyParams}{Parameters}
+{\em impulse} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_a1f477dd74f4f2eeeabccb3fbde353a29}\label{class_transform_a1f477dd74f4f2eeeabccb3fbde353a29}} 
+\index{Transform@{Transform}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2}{Vector2}} Transform\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+/brief Get the position of the object
+
+\begin{DoxyReturn}{Returns}
+position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_ab49fa8f78387c9a81b17bcc0a61652cc}\label{class_transform_ab49fa8f78387c9a81b17bcc0a61652cc}} 
+\index{Transform@{Transform}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Transform\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{p }\end{DoxyParamCaption})}
+
+/brief Set the position of the object in physical world
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_a28f39f387e6f4c4443bc431c857b31c5}\label{class_transform_a28f39f387e6f4c4443bc431c857b31c5}} 
+\index{Transform@{Transform}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetSize()}{SetSize()}}
+{\footnotesize\ttfamily void Transform\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{size }\end{DoxyParamCaption})}
+
+Set the collision size
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_a314828d7ca05056d4ea51561c73d0692}\label{class_transform_a314828d7ca05056d4ea51561c73d0692}} 
+\index{Transform@{Transform}!Update@{Update}}
+\index{Update@{Update}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Transform\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+/ Update the position of game object according to that of physical world
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & time elapsed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a002dadaf63d7d6aacb7ec89e62df7e0e}{Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Component/Transform.\+hpp\end{DoxyCompactItemize}

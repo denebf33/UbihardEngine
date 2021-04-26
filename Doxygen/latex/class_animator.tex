@@ -1,0 +1,133 @@
+\hypertarget{class_animator}{}\doxysection{Animator Class Reference}
+\label{class_animator}\index{Animator@{Animator}}
+
+
+class of animator component.  
+
+
+
+
+{\ttfamily \#include $<$Animator.\+hpp$>$}
+
+Inheritance diagram for Animator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_animator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animator_a147fb84e405dc8a15211f191b7cd9a17}{Animator}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em construtor of animator class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_ac1a8cd13f166e1faf557b163893ea11a}\label{class_animator_ac1a8cd13f166e1faf557b163893ea11a}} 
+void \mbox{\hyperlink{class_animator_ac1a8cd13f166e1faf557b163893ea11a}{Start}} () override
+\begin{DoxyCompactList}\small\item\em run at the first frame of game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_a733b8130a14cee6557a37b8014ecfc13}{Update}} (int dt) override
+\begin{DoxyCompactList}\small\item\em run at each frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_ae3f6156ee15469c3b045949a6128552f}\label{class_animator_ae3f6156ee15469c3b045949a6128552f}} 
+void \mbox{\hyperlink{class_animator_ae3f6156ee15469c3b045949a6128552f}{Render}} () override
+\begin{DoxyCompactList}\small\item\em render on screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_a2927d1b0fe10eacfe567706f4d9f8388}\label{class_animator_a2927d1b0fe10eacfe567706f4d9f8388}} 
+void \mbox{\hyperlink{class_animator_a2927d1b0fe10eacfe567706f4d9f8388}{Get\+Animations}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em read animations file form a path \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_a8cfcfed925827de8c84e93d78a4cde99}{Start\+Animation}} (std\+::string name, Animation\+Model model)
+\begin{DoxyCompactList}\small\item\em start the animation with specific model \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_a1fa998ddf082b43756176cc1ff6d92ac}\label{class_animator_a1fa998ddf082b43756176cc1ff6d92ac}} 
+std\+::string \mbox{\hyperlink{class_animator_a1fa998ddf082b43756176cc1ff6d92ac}{Get\+Current\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em get the name of current animation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_aeccb3893902c5b272014d5f530a1faf8}\label{class_animator_aeccb3893902c5b272014d5f530a1faf8}} 
+void \mbox{\hyperlink{class_animator_aeccb3893902c5b272014d5f530a1faf8}{Stop\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em stop the current animation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_ac4fb93b1ee0e92f85fad7bf6cdf8c48f}\label{class_animator_ac4fb93b1ee0e92f85fad7bf6cdf8c48f}} 
+void \mbox{\hyperlink{class_animator_ac4fb93b1ee0e92f85fad7bf6cdf8c48f}{Continue\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em continue playing the current animation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_animator_a5ed4ad1197c1ac7187049c5c5d32b48a}\label{class_animator_a5ed4ad1197c1ac7187049c5c5d32b48a}} 
+std\+::vector$<$ SDL\+\_\+\+Rect $>$ \mbox{\hyperlink{class_animator_a5ed4ad1197c1ac7187049c5c5d32b48a}{m\+\_\+\+Frames}}
+\begin{DoxyCompactList}\small\item\em rects to locate each frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_a6fae5347bbc6e13f83189b63e4c7f062}\label{class_animator_a6fae5347bbc6e13f83189b63e4c7f062}} 
+int \mbox{\hyperlink{class_animator_a6fae5347bbc6e13f83189b63e4c7f062}{m\+\_\+\+Current\+Frame}}
+\begin{DoxyCompactList}\small\item\em current animation frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_a83a354d0dfb66a8c7f83ff9f2c1d03ac}\label{class_animator_a83a354d0dfb66a8c7f83ff9f2c1d03ac}} 
+int \mbox{\hyperlink{class_animator_a83a354d0dfb66a8c7f83ff9f2c1d03ac}{m\+\_\+\+Start\+Frame}}
+\begin{DoxyCompactList}\small\item\em start frame of current animation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_a2d8a9ecb54e78f1f7ee7272f60e524a0}\label{class_animator_a2d8a9ecb54e78f1f7ee7272f60e524a0}} 
+int \mbox{\hyperlink{class_animator_a2d8a9ecb54e78f1f7ee7272f60e524a0}{m\+\_\+\+Last\+Frame}}
+\begin{DoxyCompactList}\small\item\em last frame of current animation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_a64a7a80764e72c3510fc92d1a27b9703}\label{class_animator_a64a7a80764e72c3510fc92d1a27b9703}} 
+int \mbox{\hyperlink{class_animator_a64a7a80764e72c3510fc92d1a27b9703}{m\+\_\+\+Animation\+FPS}}
+\begin{DoxyCompactList}\small\item\em animation update time \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_a5c9c7b81095bdd86f1fce0849055e56c}\label{class_animator_a5c9c7b81095bdd86f1fce0849055e56c}} 
+int \mbox{\hyperlink{class_animator_a5c9c7b81095bdd86f1fce0849055e56c}{m\+\_\+last\+Time}}
+\begin{DoxyCompactList}\small\item\em time counter \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_animator_ad84e4bc2a6787d44dcbb2af584869e36}\label{class_animator_ad84e4bc2a6787d44dcbb2af584869e36}} 
+int \mbox{\hyperlink{class_animator_ad84e4bc2a6787d44dcbb2af584869e36}{m\+\_\+\+Timer}}
+\begin{DoxyCompactList}\small\item\em time counter \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class of animator component. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_animator_a147fb84e405dc8a15211f191b7cd9a17}\label{class_animator_a147fb84e405dc8a15211f191b7cd9a17}} 
+\index{Animator@{Animator}!Animator@{Animator}}
+\index{Animator@{Animator}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{Animator()}{Animator()}}
+{\footnotesize\ttfamily Animator\+::\+Animator (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+construtor of animator class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & current renderer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_animator_a8cfcfed925827de8c84e93d78a4cde99}\label{class_animator_a8cfcfed925827de8c84e93d78a4cde99}} 
+\index{Animator@{Animator}!StartAnimation@{StartAnimation}}
+\index{StartAnimation@{StartAnimation}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{StartAnimation()}{StartAnimation()}}
+{\footnotesize\ttfamily void Animator\+::\+Start\+Animation (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{Animation\+Model}]{model }\end{DoxyParamCaption})}
+
+
+
+start the animation with specific model 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the animation \\
+\hline
+{\em model} & animation model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animator_a733b8130a14cee6557a37b8014ecfc13}\label{class_animator_a733b8130a14cee6557a37b8014ecfc13}} 
+\index{Animator@{Animator}!Update@{Update}}
+\index{Update@{Update}!Animator@{Animator}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animator\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+run at each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & duration time between each frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a002dadaf63d7d6aacb7ec89e62df7e0e}{Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Component/Animator.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['setdensity_93',['SetDensity',['../class_physics_engine.html#ab2447f6439e6931a4770b98205f968a1',1,'PhysicsEngine']]],
+  ['setfriction_94',['SetFriction',['../class_physics_engine.html#a3cf427788519591f42f0dd12f73ad2ab',1,'PhysicsEngine']]],
+  ['setgravity_95',['SetGravity',['../class_engine.html#aec39767a08447f4e7d8840d45645605c',1,'Engine::SetGravity()'],['../class_physics_engine.html#a32a5031aa9b4fffc5b829eaec88b39c2',1,'PhysicsEngine::SetGravity()']]],
+  ['setobjectdensity_96',['SetObjectDensity',['../class_engine.html#a0943ac23088e9a9722b89009097b144e',1,'Engine']]],
+  ['setobjectfriction_97',['SetObjectFriction',['../class_engine.html#a69233cfa288a2c104d78017cd4fa9ba5',1,'Engine']]],
+  ['setobjectgravityscale_98',['SetObjectGravityScale',['../class_engine.html#af81ebe9cec76108c7502aa01a1c1f3fd',1,'Engine::SetObjectGravityScale()'],['../class_physics_engine.html#ab15ffa494ab940fc03f6b9325899870e',1,'PhysicsEngine::SetObjectGravityScale()']]],
+  ['setobjectlinearvelocity_99',['SetObjectLinearVelocity',['../class_engine.html#a6f89d8c95778ae1f317929b93de15e81',1,'Engine::SetObjectLinearVelocity()'],['../class_physics_engine.html#a3eb5457392f762c73d20cd28064778d2',1,'PhysicsEngine::SetObjectLinearVelocity()']]],
+  ['setphysicalbody_100',['SetPhysicalBody',['../class_game_object.html#a7fad3ff7ba88b0ace20809ba1147a471',1,'GameObject']]],
+  ['setposition_101',['SetPosition',['../class_transform.html#ab49fa8f78387c9a81b17bcc0a61652cc',1,'Transform::SetPosition()'],['../class_physics_engine.html#ae908501789f1ffb82b7fbf152702c8b8',1,'PhysicsEngine::SetPosition()']]],
+  ['setrenderdrawcolor_102',['SetRenderDrawColor',['../class_graphics_engine_renderer.html#ae12741482a931136e6300fefe2aa0d81',1,'GraphicsEngineRenderer']]],
+  ['setrenderer_103',['SetRenderer',['../class_game_object.html#aaef9c811ee00f3285c9161dc53ec91f3',1,'GameObject']]],
+  ['setscale_104',['SetScale',['../class_collider.html#a599a497b3e8589b37582a0f6edef8a9d',1,'Collider']]],
+  ['setscalefactor_105',['SetScaleFactor',['../class_engine.html#a98e06146d477649192b1f204e9b61e0a',1,'Engine::SetScaleFactor()'],['../class_physics_engine.html#a3512a35840506921c46cd942b3885db3',1,'PhysicsEngine::SetScaleFactor()']]],
+  ['setsensor_106',['SetSensor',['../class_game_object.html#ae8c649b2d00e533c0688fb2efc090a52',1,'GameObject::SetSensor()'],['../class_collider.html#ae1628edf0e05432254278a978fc0c1f0',1,'Collider::SetSensor()'],['../class_physics_engine.html#acf1438c657e862038d46ecdaa8a90ce3',1,'PhysicsEngine::SetSensor()']]],
+  ['setsize_107',['SetSize',['../class_transform.html#a28f39f387e6f4c4443bc431c857b31c5',1,'Transform::SetSize()'],['../class_physics_engine.html#a40b60b1fd3647ee35499ea7394f194ae',1,'PhysicsEngine::SetSize()']]],
+  ['setspritedetail_108',['SetSpriteDetail',['../class_sprite_renderer.html#a574e9fd7caf99dee337953dce54f7d47',1,'SpriteRenderer']]],
+  ['setspritesize_109',['SetSpriteSize',['../class_sprite_renderer.html#aa0459773b46a6dc0613e3f345fa65863',1,'SpriteRenderer']]],
+  ['shutdown_110',['Shutdown',['../class_engine.html#a3dbd2c0a65e642baa7eaa97caa6e4e64',1,'Engine']]],
+  ['size_111',['size',['../class_sprite_renderer.html#ae342334975ee7ff743ae1de2aab384a5',1,'SpriteRenderer']]],
+  ['spriterenderer_112',['SpriteRenderer',['../class_sprite_renderer.html',1,'SpriteRenderer'],['../class_sprite_renderer.html#a0064d27bc30985d8f02777f97e014819',1,'SpriteRenderer::SpriteRenderer()'],['../class_sprite_renderer.html#a3684dde00783375b92b1891156015f69',1,'SpriteRenderer::SpriteRenderer(SDL_Renderer *renderer, std::string path)'],['../class_sprite_renderer.html#a7f3357328a47c4375e3755be295daabf',1,'SpriteRenderer::SpriteRenderer(SDL_Texture *t, SDL_Rect rect)'],['../class_sprite_renderer.html#a1550cce188ad557f59d408e0225941f5',1,'SpriteRenderer::SpriteRenderer(SDL_Renderer *renderer)']]],
+  ['start_113',['Start',['../class_animator.html#ac1a8cd13f166e1faf557b163893ea11a',1,'Animator::Start()'],['../class_component.html#a3f57807787e0015833ccffd83fb63d14',1,'Component::Start()'],['../class_sprite_renderer.html#a6606aaf32a10370455134e94d91dd919',1,'SpriteRenderer::Start()'],['../class_transform.html#ad441f4a3a50d257372f40f98eee97feb',1,'Transform::Start()'],['../class_engine.html#a1fbe9f5cb4abc3572e432cae1f154817',1,'Engine::Start()'],['../class_game_object.html#aa27714b4172ebff2f7cddcf63b325ac7',1,'GameObject::Start()']]],
+  ['startanimation_114',['StartAnimation',['../class_animator.html#a8cfcfed925827de8c84e93d78a4cde99',1,'Animator']]],
+  ['stopanimation_115',['StopAnimation',['../class_animator.html#aeccb3893902c5b272014d5f530a1faf8',1,'Animator']]]
+];

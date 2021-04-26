@@ -1,0 +1,135 @@
+\hypertarget{class_collider}{}\doxysection{Collider Class Reference}
+\label{class_collider}\index{Collider@{Collider}}
+
+
+collider component of game objects.  
+
+
+
+
+{\ttfamily \#include $<$Collider.\+hpp$>$}
+
+Inheritance diagram for Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_collider}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collider_aa7186870221f868bbc74c3ae8609fa66}\label{class_collider_aa7186870221f868bbc74c3ae8609fa66}} 
+\mbox{\hyperlink{class_collider_aa7186870221f868bbc74c3ae8609fa66}{Collider}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collider_a564acde9860f875a32a6638c573d87be}\label{class_collider_a564acde9860f875a32a6638c573d87be}} 
+\mbox{\hyperlink{class_collider_a564acde9860f875a32a6638c573d87be}{$\sim$\+Collider}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collider_ac3c09d7d8ffad8040f19a2b269cb11f2}{Update}} (int dt) override
+\begin{DoxyCompactList}\small\item\em Empty Update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collider_aaf3efe8ffeb4d24498fbd8740694d16b}\label{class_collider_aaf3efe8ffeb4d24498fbd8740694d16b}} 
+void \mbox{\hyperlink{class_collider_aaf3efe8ffeb4d24498fbd8740694d16b}{Render}} () override
+\begin{DoxyCompactList}\small\item\em Empty render. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_contact}{Contact}} $>$ \mbox{\hyperlink{class_collider_ac8af3e2506464fbc33dd563af23ba9e2}{Get\+Contact\+List}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_contact}{Contact}} $>$ \mbox{\hyperlink{class_collider_af29afaf7c9306b5f2399c4ad73f23d00}{Get\+Sensor\+Contact\+List}} ()
+\begin{DoxyCompactList}\small\item\em Get the contact list of sensors that collide with the game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collider_a599a497b3e8589b37582a0f6edef8a9d}{Set\+Scale}} (float scale)
+\item 
+float \mbox{\hyperlink{class_collider_af2232e8d8c291499851844a7242326e3}{Get\+Scale}} (bool is\+Trigger) const
+\item 
+void \mbox{\hyperlink{class_collider_ae1628edf0e05432254278a978fc0c1f0}{Set\+Sensor}} (bool is\+Sensor)
+\begin{DoxyCompactList}\small\item\em Set if the object is trigger or not Set whether this game\+Object collide with other, collider won\textquotesingle{}t collide with trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+collider component of game objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collider_ac8af3e2506464fbc33dd563af23ba9e2}\label{class_collider_ac8af3e2506464fbc33dd563af23ba9e2}} 
+\index{Collider@{Collider}!GetContactList@{GetContactList}}
+\index{GetContactList@{GetContactList}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetContactList()}{GetContactList()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_contact}{Contact}}$>$ Collider\+::\+Get\+Contact\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the contact list of current object
+
+\begin{DoxyReturn}{Returns}
+contact list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collider_af2232e8d8c291499851844a7242326e3}\label{class_collider_af2232e8d8c291499851844a7242326e3}} 
+\index{Collider@{Collider}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}}
+{\footnotesize\ttfamily float Collider\+::\+Get\+Scale (\begin{DoxyParamCaption}\item[{bool}]{is\+Trigger }\end{DoxyParamCaption}) const}
+
+/brief Get the collision scale of the object
+
+\begin{DoxyReturn}{Returns}
+scale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collider_af29afaf7c9306b5f2399c4ad73f23d00}\label{class_collider_af29afaf7c9306b5f2399c4ad73f23d00}} 
+\index{Collider@{Collider}!GetSensorContactList@{GetSensorContactList}}
+\index{GetSensorContactList@{GetSensorContactList}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetSensorContactList()}{GetSensorContactList()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{struct_contact}{Contact}}$>$ Collider\+::\+Get\+Sensor\+Contact\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the contact list of sensors that collide with the game object. 
+
+\begin{DoxyReturn}{Returns}
+contact list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collider_a599a497b3e8589b37582a0f6edef8a9d}\label{class_collider_a599a497b3e8589b37582a0f6edef8a9d}} 
+\index{Collider@{Collider}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}}
+{\footnotesize\ttfamily void Collider\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+/brief Set the collision scale of the object i.\+e. the collision size in physical world is size $\ast$ scale
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collider_ae1628edf0e05432254278a978fc0c1f0}\label{class_collider_ae1628edf0e05432254278a978fc0c1f0}} 
+\index{Collider@{Collider}!SetSensor@{SetSensor}}
+\index{SetSensor@{SetSensor}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetSensor()}{SetSensor()}}
+{\footnotesize\ttfamily void Collider\+::\+Set\+Sensor (\begin{DoxyParamCaption}\item[{bool}]{is\+Sensor }\end{DoxyParamCaption})}
+
+
+
+Set if the object is trigger or not Set whether this game\+Object collide with other, collider won\textquotesingle{}t collide with trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Sensor} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collider_ac3c09d7d8ffad8040f19a2b269cb11f2}\label{class_collider_ac3c09d7d8ffad8040f19a2b269cb11f2}} 
+\index{Collider@{Collider}!Update@{Update}}
+\index{Update@{Update}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Collider\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Empty Update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a002dadaf63d7d6aacb7ec89e62df7e0e}{Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Component/Collider.\+hpp\end{DoxyCompactItemize}

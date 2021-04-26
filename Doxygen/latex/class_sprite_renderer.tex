@@ -1,0 +1,183 @@
+\hypertarget{class_sprite_renderer}{}\doxysection{Sprite\+Renderer Class Reference}
+\label{class_sprite_renderer}\index{SpriteRenderer@{SpriteRenderer}}
+
+
+sprite renderer component of game objects.  
+
+
+
+
+{\ttfamily \#include $<$Sprite\+Renderer.\+hpp$>$}
+
+Inheritance diagram for Sprite\+Renderer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sprite_renderer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_renderer_a6606aaf32a10370455134e94d91dd919}\label{class_sprite_renderer_a6606aaf32a10370455134e94d91dd919}} 
+void \mbox{\hyperlink{class_sprite_renderer_a6606aaf32a10370455134e94d91dd919}{Start}} () override
+\begin{DoxyCompactList}\small\item\em run at the first frame of game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_renderer_a49837ff60a785036ef125726536eed55}{Update}} (int dt) override
+\begin{DoxyCompactList}\small\item\em run at each frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_renderer_a476019c96e2119d73d16b0db30c0bc7c}\label{class_sprite_renderer_a476019c96e2119d73d16b0db30c0bc7c}} 
+void \mbox{\hyperlink{class_sprite_renderer_a476019c96e2119d73d16b0db30c0bc7c}{Render}} () override
+\begin{DoxyCompactList}\small\item\em render on screen \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_renderer_a0064d27bc30985d8f02777f97e014819}\label{class_sprite_renderer_a0064d27bc30985d8f02777f97e014819}} 
+\mbox{\hyperlink{class_sprite_renderer_a0064d27bc30985d8f02777f97e014819}{Sprite\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_renderer_a3684dde00783375b92b1891156015f69}{Sprite\+Renderer}} (SDL\+\_\+\+Renderer $\ast$renderer, std\+::string path)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_renderer_a7f3357328a47c4375e3755be295daabf}{Sprite\+Renderer}} (SDL\+\_\+\+Texture $\ast$t, SDL\+\_\+\+Rect rect)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_renderer_a1550cce188ad557f59d408e0225941f5}{Sprite\+Renderer}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_renderer_ae53730ef86000bf59905c2cf67e4d3a4}\label{class_sprite_renderer_ae53730ef86000bf59905c2cf67e4d3a4}} 
+\mbox{\hyperlink{class_sprite_renderer_ae53730ef86000bf59905c2cf67e4d3a4}{$\sim$\+Sprite\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_renderer_a574e9fd7caf99dee337953dce54f7d47}{Set\+Sprite\+Detail}} (SDL\+\_\+\+Texture $\ast$t, SDL\+\_\+\+Rect rect)
+\begin{DoxyCompactList}\small\item\em set the texture and the src rect \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_renderer_a4bb10b92bf77728cb9e447166731f10c}\label{class_sprite_renderer_a4bb10b92bf77728cb9e447166731f10c}} 
+void {\bfseries Set\+Sprite} (std\+::string path)
+\item 
+\mbox{\hyperlink{class_vector2}{Vector2}} \mbox{\hyperlink{class_sprite_renderer_a47a78527d14a0701da1339c976ef013a}{Get\+Sprite\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Get the destined sprite size, which is the size rendered on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sprite_renderer_aa0459773b46a6dc0613e3f345fa65863}{Set\+Sprite\+Size}} (\mbox{\hyperlink{class_vector2}{Vector2}} const \&\mbox{\hyperlink{class_sprite_renderer_ae342334975ee7ff743ae1de2aab384a5}{size}})
+\begin{DoxyCompactList}\small\item\em Set the sprite size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_renderer_a99d9aaded0da377b1159f9a4fced27f9}\label{class_sprite_renderer_a99d9aaded0da377b1159f9a4fced27f9}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} {\bfseries position}
+\item 
+\mbox{\Hypertarget{class_sprite_renderer_ae342334975ee7ff743ae1de2aab384a5}\label{class_sprite_renderer_ae342334975ee7ff743ae1de2aab384a5}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} \mbox{\hyperlink{class_sprite_renderer_ae342334975ee7ff743ae1de2aab384a5}{size}}
+\begin{DoxyCompactList}\small\item\em relative position to the game\+Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+sprite renderer component of game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sprite_renderer_a3684dde00783375b92b1891156015f69}\label{class_sprite_renderer_a3684dde00783375b92b1891156015f69}} 
+\index{SpriteRenderer@{SpriteRenderer}!SpriteRenderer@{SpriteRenderer}}
+\index{SpriteRenderer@{SpriteRenderer}!SpriteRenderer@{SpriteRenderer}}
+\doxysubsubsection{\texorpdfstring{SpriteRenderer()}{SpriteRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Sprite\+Renderer\+::\+Sprite\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path of the sprite, src defaults to the size of the entire sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_renderer_a7f3357328a47c4375e3755be295daabf}\label{class_sprite_renderer_a7f3357328a47c4375e3755be295daabf}} 
+\index{SpriteRenderer@{SpriteRenderer}!SpriteRenderer@{SpriteRenderer}}
+\index{SpriteRenderer@{SpriteRenderer}!SpriteRenderer@{SpriteRenderer}}
+\doxysubsubsection{\texorpdfstring{SpriteRenderer()}{SpriteRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Sprite\+Renderer\+::\+Sprite\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{t,  }\item[{SDL\+\_\+\+Rect}]{rect }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & texture \\
+\hline
+{\em rect} & which part of the sprite is rendered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_renderer_a1550cce188ad557f59d408e0225941f5}\label{class_sprite_renderer_a1550cce188ad557f59d408e0225941f5}} 
+\index{SpriteRenderer@{SpriteRenderer}!SpriteRenderer@{SpriteRenderer}}
+\index{SpriteRenderer@{SpriteRenderer}!SpriteRenderer@{SpriteRenderer}}
+\doxysubsubsection{\texorpdfstring{SpriteRenderer()}{SpriteRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Sprite\+Renderer\+::\+Sprite\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & renderer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_renderer_a47a78527d14a0701da1339c976ef013a}\label{class_sprite_renderer_a47a78527d14a0701da1339c976ef013a}} 
+\index{SpriteRenderer@{SpriteRenderer}!GetSpriteSize@{GetSpriteSize}}
+\index{GetSpriteSize@{GetSpriteSize}!SpriteRenderer@{SpriteRenderer}}
+\doxysubsubsection{\texorpdfstring{GetSpriteSize()}{GetSpriteSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2}{Vector2}} Sprite\+Renderer\+::\+Get\+Sprite\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the destined sprite size, which is the size rendered on the screen. 
+
+\begin{DoxyReturn}{Returns}
+sprite size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_renderer_a574e9fd7caf99dee337953dce54f7d47}\label{class_sprite_renderer_a574e9fd7caf99dee337953dce54f7d47}} 
+\index{SpriteRenderer@{SpriteRenderer}!SetSpriteDetail@{SetSpriteDetail}}
+\index{SetSpriteDetail@{SetSpriteDetail}!SpriteRenderer@{SpriteRenderer}}
+\doxysubsubsection{\texorpdfstring{SetSpriteDetail()}{SetSpriteDetail()}}
+{\footnotesize\ttfamily void Sprite\+Renderer\+::\+Set\+Sprite\+Detail (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{t,  }\item[{SDL\+\_\+\+Rect}]{rect }\end{DoxyParamCaption})}
+
+
+
+set the texture and the src rect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & texture \\
+\hline
+{\em rect} & src rect \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_renderer_aa0459773b46a6dc0613e3f345fa65863}\label{class_sprite_renderer_aa0459773b46a6dc0613e3f345fa65863}} 
+\index{SpriteRenderer@{SpriteRenderer}!SetSpriteSize@{SetSpriteSize}}
+\index{SetSpriteSize@{SetSpriteSize}!SpriteRenderer@{SpriteRenderer}}
+\doxysubsubsection{\texorpdfstring{SetSpriteSize()}{SetSpriteSize()}}
+{\footnotesize\ttfamily void Sprite\+Renderer\+::\+Set\+Sprite\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}} const \&}]{size }\end{DoxyParamCaption})}
+
+
+
+Set the sprite size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & sprite size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_renderer_a49837ff60a785036ef125726536eed55}\label{class_sprite_renderer_a49837ff60a785036ef125726536eed55}} 
+\index{SpriteRenderer@{SpriteRenderer}!Update@{Update}}
+\index{Update@{Update}!SpriteRenderer@{SpriteRenderer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Sprite\+Renderer\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+run at each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & duration time between each frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_component_a002dadaf63d7d6aacb7ec89e62df7e0e}{Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Component/Sprite\+Renderer.\+hpp\end{DoxyCompactItemize}

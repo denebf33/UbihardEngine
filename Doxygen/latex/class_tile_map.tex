@@ -1,0 +1,114 @@
+\hypertarget{class_tile_map}{}\doxysection{Tile\+Map Class Reference}
+\label{class_tile_map}\index{TileMap@{TileMap}}
+
+
+tilemap class  
+
+
+
+
+{\ttfamily \#include $<$Tile\+Map.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tile_map_ad2e4b4043a3594236e42ca9ea1fdfa91}{Tile\+Map}} (SDL\+\_\+\+Renderer $\ast$renderer, std\+::string scene\+Path)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tile_map_ac2cc5b0ce44e36f8da6653e776cadd2f}{Read\+CSV}} (std\+::string csv\+Path)
+\begin{DoxyCompactList}\small\item\em read map csv file \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_tile_map_ab5a8d4f3a9802c8c43a223b3f95effe9}{Get\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em get tilemap texture \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_tile_map_ae1539ce6c99716f58d57b76ae7f20dad}{Get\+Rect}} (int number)
+\begin{DoxyCompactList}\small\item\em get src rect of certain type of tile \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tile_map_ac8e4cc528a6f2ce219a7cde685a98fae}\label{class_tile_map_ac8e4cc528a6f2ce219a7cde685a98fae}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_tile_map_ac8e4cc528a6f2ce219a7cde685a98fae}{m\+\_\+v\+Tile\+Number}}
+\begin{DoxyCompactList}\small\item\em All tiles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tile_map_a7a3b9392fa229c17d45161b3d0ceb0f9}\label{class_tile_map_a7a3b9392fa229c17d45161b3d0ceb0f9}} 
+int \mbox{\hyperlink{class_tile_map_a7a3b9392fa229c17d45161b3d0ceb0f9}{m\+\_\+total\+Number}}
+\begin{DoxyCompactList}\small\item\em number of tiles \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tile_map_aecedc38656ae3447e9552ca41ebed394}\label{class_tile_map_aecedc38656ae3447e9552ca41ebed394}} 
+int \mbox{\hyperlink{class_tile_map_aecedc38656ae3447e9552ca41ebed394}{m\+\_\+map\+Col}}
+\begin{DoxyCompactList}\small\item\em columns of tiles \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tile_map_ae434a545c641c587ae55899bad20c6e5}\label{class_tile_map_ae434a545c641c587ae55899bad20c6e5}} 
+int \mbox{\hyperlink{class_tile_map_ae434a545c641c587ae55899bad20c6e5}{m\+\_\+map\+Row}}
+\begin{DoxyCompactList}\small\item\em rows of tils \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+tilemap class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_tile_map_ad2e4b4043a3594236e42ca9ea1fdfa91}\label{class_tile_map_ad2e4b4043a3594236e42ca9ea1fdfa91}} 
+\index{TileMap@{TileMap}!TileMap@{TileMap}}
+\index{TileMap@{TileMap}!TileMap@{TileMap}}
+\doxysubsubsection{\texorpdfstring{TileMap()}{TileMap()}}
+{\footnotesize\ttfamily Tile\+Map\+::\+Tile\+Map (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{std\+::string}]{scene\+Path }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & current renderer \\
+\hline
+{\em scene\+Path} & path of the scene.\+json \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tile_map_ae1539ce6c99716f58d57b76ae7f20dad}\label{class_tile_map_ae1539ce6c99716f58d57b76ae7f20dad}} 
+\index{TileMap@{TileMap}!GetRect@{GetRect}}
+\index{GetRect@{GetRect}!TileMap@{TileMap}}
+\doxysubsubsection{\texorpdfstring{GetRect()}{GetRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Tile\+Map\+::\+Get\+Rect (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+
+
+get src rect of certain type of tile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & tile type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+src range of the tile 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tile_map_ab5a8d4f3a9802c8c43a223b3f95effe9}\label{class_tile_map_ab5a8d4f3a9802c8c43a223b3f95effe9}} 
+\index{TileMap@{TileMap}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!TileMap@{TileMap}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Tile\+Map\+::\+Get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get tilemap texture 
+
+\begin{DoxyReturn}{Returns}
+current tilemap texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tile_map_ac2cc5b0ce44e36f8da6653e776cadd2f}\label{class_tile_map_ac2cc5b0ce44e36f8da6653e776cadd2f}} 
+\index{TileMap@{TileMap}!ReadCSV@{ReadCSV}}
+\index{ReadCSV@{ReadCSV}!TileMap@{TileMap}}
+\doxysubsubsection{\texorpdfstring{ReadCSV()}{ReadCSV()}}
+{\footnotesize\ttfamily void Tile\+Map\+::\+Read\+CSV (\begin{DoxyParamCaption}\item[{std\+::string}]{csv\+Path }\end{DoxyParamCaption})}
+
+
+
+read map csv file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv\+Path} & path of the tile map csv file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tile\+Map.\+hpp\end{DoxyCompactItemize}

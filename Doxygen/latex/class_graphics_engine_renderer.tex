@@ -1,0 +1,84 @@
+\hypertarget{class_graphics_engine_renderer}{}\doxysection{Graphics\+Engine\+Renderer Class Reference}
+\label{class_graphics_engine_renderer}\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+
+
+This class serves as an interface to the main graphics renderer for our engine.  
+
+
+
+
+{\ttfamily \#include $<$Graphics\+Engine\+Renderer.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graphics_engine_renderer_a366af9cd951bd4a6ecac6edd54cf5d09}{Graphics\+Engine\+Renderer}} (int w, int h)
+\item 
+\mbox{\hyperlink{class_graphics_engine_renderer_af49c914cd8c332eb7674be82e7edd4fb}{$\sim$\+Graphics\+Engine\+Renderer}} ()
+\item 
+void \mbox{\hyperlink{class_graphics_engine_renderer_ae12741482a931136e6300fefe2aa0d81}{Set\+Render\+Draw\+Color}} (int r, int g, int b, int a)
+\item 
+void \mbox{\hyperlink{class_graphics_engine_renderer_aafba41747092d1b19e671d70f8421b22}{Render\+Clear}} ()
+\item 
+void \mbox{\hyperlink{class_graphics_engine_renderer_add023e7b5c97b9c61f6656c6ecf889bb}{Render\+Present}} ()
+\item 
+SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{class_graphics_engine_renderer_a8dd539dd9f9bd68ef9e7a2179db0ccfa}{Get\+Window}} ()
+\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_graphics_engine_renderer_a2c812245b21ab5094306b6566a528d49}{Get\+Renderer}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class serves as an interface to the main graphics renderer for our engine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graphics_engine_renderer_a366af9cd951bd4a6ecac6edd54cf5d09}\label{class_graphics_engine_renderer_a366af9cd951bd4a6ecac6edd54cf5d09}} 
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{GraphicsEngineRenderer()}{GraphicsEngineRenderer()}}
+{\footnotesize\ttfamily Graphics\+Engine\+Renderer\+::\+Graphics\+Engine\+Renderer (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{class_graphics_engine_renderer_af49c914cd8c332eb7674be82e7edd4fb}\label{class_graphics_engine_renderer_af49c914cd8c332eb7674be82e7edd4fb}} 
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!````~GraphicsEngineRenderer@{$\sim$GraphicsEngineRenderer}}
+\index{````~GraphicsEngineRenderer@{$\sim$GraphicsEngineRenderer}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$GraphicsEngineRenderer()}{~GraphicsEngineRenderer()}}
+{\footnotesize\ttfamily Graphics\+Engine\+Renderer\+::$\sim$\+Graphics\+Engine\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graphics_engine_renderer_a2c812245b21ab5094306b6566a528d49}\label{class_graphics_engine_renderer_a2c812245b21ab5094306b6566a528d49}} 
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!GetRenderer@{GetRenderer}}
+\index{GetRenderer@{GetRenderer}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{GetRenderer()}{GetRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ Graphics\+Engine\+Renderer\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get Pointer to Renderer \mbox{\Hypertarget{class_graphics_engine_renderer_a8dd539dd9f9bd68ef9e7a2179db0ccfa}\label{class_graphics_engine_renderer_a8dd539dd9f9bd68ef9e7a2179db0ccfa}} 
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!GetWindow@{GetWindow}}
+\index{GetWindow@{GetWindow}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{GetWindow()}{GetWindow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window$\ast$ Graphics\+Engine\+Renderer\+::\+Get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get Pointer to Window \mbox{\Hypertarget{class_graphics_engine_renderer_aafba41747092d1b19e671d70f8421b22}\label{class_graphics_engine_renderer_aafba41747092d1b19e671d70f8421b22}} 
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!RenderClear@{RenderClear}}
+\index{RenderClear@{RenderClear}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderClear()}{RenderClear()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+Renderer\+::\+Render\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the screen \mbox{\Hypertarget{class_graphics_engine_renderer_add023e7b5c97b9c61f6656c6ecf889bb}\label{class_graphics_engine_renderer_add023e7b5c97b9c61f6656c6ecf889bb}} 
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!RenderPresent@{RenderPresent}}
+\index{RenderPresent@{RenderPresent}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderPresent()}{RenderPresent()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+Renderer\+::\+Render\+Present (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Render whatever is in the backbuffer to the screen. \mbox{\Hypertarget{class_graphics_engine_renderer_ae12741482a931136e6300fefe2aa0d81}\label{class_graphics_engine_renderer_ae12741482a931136e6300fefe2aa0d81}} 
+\index{GraphicsEngineRenderer@{GraphicsEngineRenderer}!SetRenderDrawColor@{SetRenderDrawColor}}
+\index{SetRenderDrawColor@{SetRenderDrawColor}!GraphicsEngineRenderer@{GraphicsEngineRenderer}}
+\doxysubsubsection{\texorpdfstring{SetRenderDrawColor()}{SetRenderDrawColor()}}
+{\footnotesize\ttfamily void Graphics\+Engine\+Renderer\+::\+Set\+Render\+Draw\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+Set the color for the background whenever the color is cleared. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Graphics\+Engine\+Renderer.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\hypertarget{class_resource_manager}{}\doxysection{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+manager of all kind of reasources.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_resource_manager_a9f79ad59ddadd77d9a29f82fc38204d3}{Read\+Scene\+Json}} (std\+::string scene\+Json)
+\begin{DoxyCompactList}\small\item\em Read and save .json file of the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_resource_manager_a9455d7f23520f62789d20f3a0193508e}{Read\+Animation\+Json}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Read and save .json file of animations. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_resource_manager_ad74abfd3b5cd11d635f4157534ab8451}{Get\+Name}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Get name of a certain resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_resource_manager_a964673b10aca6621527e28a8d66d5b80}{Load\+Texture}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em load a texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_resource_manager_ad3443904425fb7b332be84686f5408b9}{Load\+Music}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em load a music \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{class_resource_manager_ad69f4f65253f95b066300fafad644c16}{Get\+Texture\+By\+Path}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em get a texture \end{DoxyCompactList}\item 
+Mix\+\_\+\+Chunk $\ast$ \mbox{\hyperlink{class_resource_manager_a95588624dbe37dbdbb28d3df30ecbc86}{Get\+Music\+By\+Path}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em get a music \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_manager_a950f83bb1b97f41542aece053e6a67f4}\label{class_resource_manager_a950f83bb1b97f41542aece053e6a67f4}} 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{class_resource_manager_a950f83bb1b97f41542aece053e6a67f4}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Singleton instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_manager_a08c4ebc57f3b1b9aa20887e7a61d2f37}\label{class_resource_manager_a08c4ebc57f3b1b9aa20887e7a61d2f37}} 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_resource_manager_a08c4ebc57f3b1b9aa20887e7a61d2f37}{m\+\_\+renderer}}
+\begin{DoxyCompactList}\small\item\em Current renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+manager of all kind of reasources. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_a95588624dbe37dbdbb28d3df30ecbc86}\label{class_resource_manager_a95588624dbe37dbdbb28d3df30ecbc86}} 
+\index{ResourceManager@{ResourceManager}!GetMusicByPath@{GetMusicByPath}}
+\index{GetMusicByPath@{GetMusicByPath}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetMusicByPath()}{GetMusicByPath()}}
+{\footnotesize\ttfamily Mix\+\_\+\+Chunk$\ast$ Resource\+Manager\+::\+Get\+Music\+By\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+get a music 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the music \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+corresponding music 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_ad74abfd3b5cd11d635f4157534ab8451}\label{class_resource_manager_ad74abfd3b5cd11d635f4157534ab8451}} 
+\index{ResourceManager@{ResourceManager}!GetName@{GetName}}
+\index{GetName@{GetName}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Resource\+Manager\+::\+Get\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Get name of a certain resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path of the resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name of the resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_ad69f4f65253f95b066300fafad644c16}\label{class_resource_manager_ad69f4f65253f95b066300fafad644c16}} 
+\index{ResourceManager@{ResourceManager}!GetTextureByPath@{GetTextureByPath}}
+\index{GetTextureByPath@{GetTextureByPath}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetTextureByPath()}{GetTextureByPath()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture$\ast$ Resource\+Manager\+::\+Get\+Texture\+By\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+get a texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path to the picture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+corresponding texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resource_manager_ad3443904425fb7b332be84686f5408b9}\label{class_resource_manager_ad3443904425fb7b332be84686f5408b9}} 
+\index{ResourceManager@{ResourceManager}!LoadMusic@{LoadMusic}}
+\index{LoadMusic@{LoadMusic}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadMusic()}{LoadMusic()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Load\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+load a music 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path of the music \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_manager_a964673b10aca6621527e28a8d66d5b80}\label{class_resource_manager_a964673b10aca6621527e28a8d66d5b80}} 
+\index{ResourceManager@{ResourceManager}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+load a texture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path of the picture. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_manager_a9455d7f23520f62789d20f3a0193508e}\label{class_resource_manager_a9455d7f23520f62789d20f3a0193508e}} 
+\index{ResourceManager@{ResourceManager}!ReadAnimationJson@{ReadAnimationJson}}
+\index{ReadAnimationJson@{ReadAnimationJson}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ReadAnimationJson()}{ReadAnimationJson()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Read\+Animation\+Json (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Read and save .json file of animations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path of the animation json file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resource_manager_a9f79ad59ddadd77d9a29f82fc38204d3}\label{class_resource_manager_a9f79ad59ddadd77d9a29f82fc38204d3}} 
+\index{ResourceManager@{ResourceManager}!ReadSceneJson@{ReadSceneJson}}
+\index{ReadSceneJson@{ReadSceneJson}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ReadSceneJson()}{ReadSceneJson()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::\+Read\+Scene\+Json (\begin{DoxyParamCaption}\item[{std\+::string}]{scene\+Json }\end{DoxyParamCaption})}
+
+
+
+Read and save .json file of the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Json} & path of the scene json file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Resource\+Manager.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\hypertarget{class_vector2}{}\doxysection{Vector2 Class Reference}
+\label{class_vector2}\index{Vector2@{Vector2}}
+
+
+Defination of \mbox{\hyperlink{class_vector2}{Vector2}}.  
+
+
+
+
+{\ttfamily \#include $<$Vector2.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vector2_a22104d1809be26a419ef1f959e3761bf}\label{class_vector2_a22104d1809be26a419ef1f959e3761bf}} 
+\mbox{\hyperlink{class_vector2_a22104d1809be26a419ef1f959e3761bf}{Vector2}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of \mbox{\hyperlink{class_vector2}{Vector2}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vector2_a061ab58a0e216c759d64e3746d712b12}{Vector2}} (float x, float \mbox{\hyperlink{class_vector2_a0e07bad05f01ed811b909a2eef97f9e2}{y}})
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_vector2}{Vector2}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector2_ae9323acbbc7a7d0d7bdee08279e96e71}\label{class_vector2_ae9323acbbc7a7d0d7bdee08279e96e71}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} {\bfseries operator+} (\mbox{\hyperlink{class_vector2}{Vector2}} const \&rhs)
+\item 
+\mbox{\Hypertarget{class_vector2_a5ddd632b5d20aa37517eb4dd9c234384}\label{class_vector2_a5ddd632b5d20aa37517eb4dd9c234384}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} \& {\bfseries operator+=} (\mbox{\hyperlink{class_vector2}{Vector2}} const \&rhs)
+\item 
+\mbox{\Hypertarget{class_vector2_a2406508d064a7c660c5d70dabb989695}\label{class_vector2_a2406508d064a7c660c5d70dabb989695}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} {\bfseries operator-\/} (\mbox{\hyperlink{class_vector2}{Vector2}} const \&rhs)
+\item 
+\mbox{\Hypertarget{class_vector2_a4a690299db0a606456f1db8e793fdc1e}\label{class_vector2_a4a690299db0a606456f1db8e793fdc1e}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} \& {\bfseries operator-\/=} (\mbox{\hyperlink{class_vector2}{Vector2}} const \&rhs)
+\item 
+\mbox{\Hypertarget{class_vector2_a45a076b750cc8249aafbab2f0ff23b34}\label{class_vector2_a45a076b750cc8249aafbab2f0ff23b34}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} {\bfseries operator-\/} ()
+\item 
+\mbox{\Hypertarget{class_vector2_a6caa23b89c1daf7d3c4594ff28d1553c}\label{class_vector2_a6caa23b89c1daf7d3c4594ff28d1553c}} 
+\mbox{\hyperlink{class_vector2}{Vector2}} {\bfseries operator$\ast$} (float rhs)
+\item 
+\mbox{\hyperlink{class_vector2}{Vector2}} \mbox{\hyperlink{class_vector2_abf921b268aff0012ec9b435fc35ad66a}{normalize}} ()
+\begin{DoxyCompactList}\small\item\em normalize the vector2 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_vector2_aa65ccae6b63c04d563167334d212504c}{magnitude}} ()
+\begin{DoxyCompactList}\small\item\em get the length of the vecoer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_vector2_a3350716da5f4608c5acc95214e195966}{distance}} (\mbox{\hyperlink{class_vector2}{Vector2}} a, \mbox{\hyperlink{class_vector2}{Vector2}} b)
+\begin{DoxyCompactList}\small\item\em get the distance between two points \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_vector2_a02469c2b7bbd66f443d5efd736170f19}{angle}} (\mbox{\hyperlink{class_vector2}{Vector2}} a, \mbox{\hyperlink{class_vector2}{Vector2}} b)
+\begin{DoxyCompactList}\small\item\em get the angle between two vectors, 0-\/180 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vector2_a046bb8d17a876acc49415128dc0502f2}\label{class_vector2_a046bb8d17a876acc49415128dc0502f2}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{class_vector2_a0e07bad05f01ed811b909a2eef97f9e2}\label{class_vector2_a0e07bad05f01ed811b909a2eef97f9e2}} 
+float \mbox{\hyperlink{class_vector2_a0e07bad05f01ed811b909a2eef97f9e2}{y}}
+\begin{DoxyCompactList}\small\item\em first dimension \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vector2_a258660c2a1465f7cc4fa1be2080adf5f}\label{class_vector2_a258660c2a1465f7cc4fa1be2080adf5f}} 
+static \mbox{\hyperlink{class_vector2}{Vector2}} \mbox{\hyperlink{class_vector2_a258660c2a1465f7cc4fa1be2080adf5f}{up}}
+\begin{DoxyCompactList}\small\item\em second dimension \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector2_a56b811daef9d248f76dbc7785bd7dfa8}\label{class_vector2_a56b811daef9d248f76dbc7785bd7dfa8}} 
+static \mbox{\hyperlink{class_vector2}{Vector2}} {\bfseries left}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vector2_ad5509684d99abc0d914c67cac77ca565}\label{class_vector2_ad5509684d99abc0d914c67cac77ca565}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{class_vector2}{Vector2}} \&vec)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defination of \mbox{\hyperlink{class_vector2}{Vector2}}. 
+
+Contains basical funtion to describe two dimension surface 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vector2_a061ab58a0e216c759d64e3746d712b12}\label{class_vector2_a061ab58a0e216c759d64e3746d712b12}} 
+\index{Vector2@{Vector2}!Vector2@{Vector2}}
+\index{Vector2@{Vector2}!Vector2@{Vector2}}
+\doxysubsubsection{\texorpdfstring{Vector2()}{Vector2()}}
+{\footnotesize\ttfamily Vector2\+::\+Vector2 (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_vector2}{Vector2}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the first dimension of \mbox{\hyperlink{class_vector2}{Vector2}} \\
+\hline
+{\em y} & the second dimension of \mbox{\hyperlink{class_vector2}{Vector2}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vector2_a02469c2b7bbd66f443d5efd736170f19}\label{class_vector2_a02469c2b7bbd66f443d5efd736170f19}} 
+\index{Vector2@{Vector2}!angle@{angle}}
+\index{angle@{angle}!Vector2@{Vector2}}
+\doxysubsubsection{\texorpdfstring{angle()}{angle()}}
+{\footnotesize\ttfamily static float Vector2\+::angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{a,  }\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get the angle between two vectors, 0-\/180 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the first point \\
+\hline
+{\em b} & the second point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector2_a3350716da5f4608c5acc95214e195966}\label{class_vector2_a3350716da5f4608c5acc95214e195966}} 
+\index{Vector2@{Vector2}!distance@{distance}}
+\index{distance@{distance}!Vector2@{Vector2}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily static float Vector2\+::distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{a,  }\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+get the distance between two points 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & the first point \\
+\hline
+{\em b} & the second point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vector2_aa65ccae6b63c04d563167334d212504c}\label{class_vector2_aa65ccae6b63c04d563167334d212504c}} 
+\index{Vector2@{Vector2}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!Vector2@{Vector2}}
+\doxysubsubsection{\texorpdfstring{magnitude()}{magnitude()}}
+{\footnotesize\ttfamily float Vector2\+::magnitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get the length of the vecoer 
+
+\begin{DoxyReturn}{Returns}
+the length of the vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector2_abf921b268aff0012ec9b435fc35ad66a}\label{class_vector2_abf921b268aff0012ec9b435fc35ad66a}} 
+\index{Vector2@{Vector2}!normalize@{normalize}}
+\index{normalize@{normalize}!Vector2@{Vector2}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2}{Vector2}} Vector2\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+normalize the vector2 
+
+\begin{DoxyReturn}{Returns}
+a vector with magnitude of 1 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector2_8hpp}{Vector2.\+hpp}}\end{DoxyCompactItemize}

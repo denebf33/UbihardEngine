@@ -1,0 +1,278 @@
+\hypertarget{class_engine}{}\doxysection{Engine Class Reference}
+\label{class_engine}\index{Engine@{Engine}}
+
+
+class of the game engine  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}\label{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}} 
+\mbox{\hyperlink{class_engine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_engine}{Engine}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}\label{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}} 
+\mbox{\hyperlink{class_engine_a8ef7030a089ecb30bbfcb9e43094717a}{$\sim$\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_ac09716a3fa9f31ecf4175a249375979c}\label{class_engine_ac09716a3fa9f31ecf4175a249375979c}} 
+void \mbox{\hyperlink{class_engine_ac09716a3fa9f31ecf4175a249375979c}{Input}} ()
+\begin{DoxyCompactList}\small\item\em Input engine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_aaa4d743ec0f2bb4e8876033a4ec03a03}\label{class_engine_aaa4d743ec0f2bb4e8876033a4ec03a03}} 
+void \mbox{\hyperlink{class_engine_aaa4d743ec0f2bb4e8876033a4ec03a03}{Update}} (int dt)
+\begin{DoxyCompactList}\small\item\em Per frame update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}\label{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}} 
+void \mbox{\hyperlink{class_engine_acde70aed0043e2e2091d0bb6cce8e3c1}{Render}} ()
+\begin{DoxyCompactList}\small\item\em Per frame render. Renders everything. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a9ec9d3d7dc0f9e79032dd83801778eaf}\label{class_engine_a9ec9d3d7dc0f9e79032dd83801778eaf}} 
+void \mbox{\hyperlink{class_engine_a9ec9d3d7dc0f9e79032dd83801778eaf}{Main\+Game\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Main Game Loop that runs forever. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a1fbe9f5cb4abc3572e432cae1f154817}\label{class_engine_a1fbe9f5cb4abc3572e432cae1f154817}} 
+void \mbox{\hyperlink{class_engine_a1fbe9f5cb4abc3572e432cae1f154817}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Initialization and shutdown pattern. Explicitly call \textquotesingle{}Start\textquotesingle{} to launch the engine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a3dbd2c0a65e642baa7eaa97caa6e4e64}\label{class_engine_a3dbd2c0a65e642baa7eaa97caa6e4e64}} 
+void \mbox{\hyperlink{class_engine_a3dbd2c0a65e642baa7eaa97caa6e4e64}{Shutdown}} ()
+\begin{DoxyCompactList}\small\item\em Initialization and shutdown pattern. Explicitly call \textquotesingle{}Shutdown\textquotesingle{} to terminate the engine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a7f07811f5bfae8943d5530057b1dc822}\label{class_engine_a7f07811f5bfae8943d5530057b1dc822}} 
+void \mbox{\hyperlink{class_engine_a7f07811f5bfae8943d5530057b1dc822}{Initialize\+Graphics\+Sub\+System}} ()
+\begin{DoxyCompactList}\small\item\em Request to startup the Graphics Subsystem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a28771fe974367e95ba5375c91b62c7b0}{Create\+Game\+Object}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Create a game\+Object with script in the engine. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a47bbafcf89fe34318a600e9c4bbcc526}\label{class_engine_a47bbafcf89fe34318a600e9c4bbcc526}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_engine_a47bbafcf89fe34318a600e9c4bbcc526}{Create\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Create an empty game\+Object in the engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_engine_ad97fb954fe87fee5caba59ba6514877b}{Create\+Static\+Object}} ()
+\item 
+\mbox{\Hypertarget{class_engine_aa273905f6c03944b1eafa4e10c736223}\label{class_engine_aa273905f6c03944b1eafa4e10c736223}} 
+void \mbox{\hyperlink{class_engine_aa273905f6c03944b1eafa4e10c736223}{Create\+Tile\+Map}} (std\+::string scene\+Path)
+\begin{DoxyCompactList}\small\item\em Create the tilemap. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a65e2844c682b2e281a5590dcc7b7122d}\label{class_engine_a65e2844c682b2e281a5590dcc7b7122d}} 
+void \mbox{\hyperlink{class_engine_a65e2844c682b2e281a5590dcc7b7122d}{Create\+Back\+Ground}} ()
+\begin{DoxyCompactList}\small\item\em Create the background picture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_engine_a578bd33a1f926f88e6d77b4e32c94cf2}\label{class_engine_a578bd33a1f926f88e6d77b4e32c94cf2}} 
+bool \mbox{\hyperlink{class_engine_a578bd33a1f926f88e6d77b4e32c94cf2}{Is\+Quit}} ()
+\begin{DoxyCompactList}\small\item\em Return whether should quit the eingine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_aec39767a08447f4e7d8840d45645605c}{Set\+Gravity}} (\mbox{\hyperlink{class_vector2}{Vector2}} gravity)
+\begin{DoxyCompactList}\small\item\em Sets gravity of the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a98e06146d477649192b1f204e9b61e0a}{Set\+Scale\+Factor}} (float scale)
+\begin{DoxyCompactList}\small\item\em Sets the scale factor of the world. If the game is tile-\/based, it should numerically be the width of a tile. It should be set before adding a game object in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a5224162b8dc294c407d58ae19d276298}{Halt}} (int time)
+\item 
+void \mbox{\hyperlink{class_engine_af81ebe9cec76108c7502aa01a1c1f3fd}{Set\+Object\+Gravity\+Scale}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$obj, float scale)
+\item 
+void \mbox{\hyperlink{class_engine_a6f89d8c95778ae1f317929b93de15e81}{Set\+Object\+Linear\+Velocity}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$obj, \mbox{\hyperlink{class_vector2}{Vector2}} v)
+\item 
+\mbox{\hyperlink{class_vector2}{Vector2}} \mbox{\hyperlink{class_engine_a4290d69489a629ac09392ed310f3401b}{Get\+Object\+Linear\+Velocity}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Get the velocity of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a0943ac23088e9a9722b89009097b144e}{Set\+Object\+Density}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$obj, float density)
+\begin{DoxyCompactList}\small\item\em Set object density. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a69233cfa288a2c104d78017cd4fa9ba5}{Set\+Object\+Friction}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$obj, float friction)
+\begin{DoxyCompactList}\small\item\em Set object friction. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_engine_a45ad504a98c36bf3a55d72a68f33403c}{Get\+Game\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em Get a vector of game objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_engine_a5329a80a975b8a57bfac6b556a05421d}{Destroy\+Game\+Object}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Remove a game object from the engine. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_physics_engine}{Physics\+Engine}} $\ast$ \mbox{\hyperlink{class_engine_abd4919e260db1d0f3efc09bcd27a58ae}{Get\+Physical\+Engine}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class of the game engine 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_engine_a28771fe974367e95ba5375c91b62c7b0}\label{class_engine_a28771fe974367e95ba5375c91b62c7b0}} 
+\index{Engine@{Engine}!CreateGameObject@{CreateGameObject}}
+\index{CreateGameObject@{CreateGameObject}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{CreateGameObject()}{CreateGameObject()}}
+{\footnotesize\ttfamily void Engine\+::\+Create\+Game\+Object (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Create a game\+Object with script in the engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path of the script file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_ad97fb954fe87fee5caba59ba6514877b}\label{class_engine_ad97fb954fe87fee5caba59ba6514877b}} 
+\index{Engine@{Engine}!CreateStaticObject@{CreateStaticObject}}
+\index{CreateStaticObject@{CreateStaticObject}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{CreateStaticObject()}{CreateStaticObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}}$\ast$ Engine\+::\+Create\+Static\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+/brief Create a static game object i.\+e. immovable, ignorant to gravity
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_a5329a80a975b8a57bfac6b556a05421d}\label{class_engine_a5329a80a975b8a57bfac6b556a05421d}} 
+\index{Engine@{Engine}!DestroyGameObject@{DestroyGameObject}}
+\index{DestroyGameObject@{DestroyGameObject}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{DestroyGameObject()}{DestroyGameObject()}}
+{\footnotesize\ttfamily void Engine\+::\+Destroy\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Remove a game object from the engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_a45ad504a98c36bf3a55d72a68f33403c}\label{class_engine_a45ad504a98c36bf3a55d72a68f33403c}} 
+\index{Engine@{Engine}!GetGameObjects@{GetGameObjects}}
+\index{GetGameObjects@{GetGameObjects}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetGameObjects()}{GetGameObjects()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_game_object}{Game\+Object}}$\ast$$>$ Engine\+::\+Get\+Game\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a vector of game objects. 
+
+\begin{DoxyReturn}{Returns}
+a vector of all gameobjects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_a4290d69489a629ac09392ed310f3401b}\label{class_engine_a4290d69489a629ac09392ed310f3401b}} 
+\index{Engine@{Engine}!GetObjectLinearVelocity@{GetObjectLinearVelocity}}
+\index{GetObjectLinearVelocity@{GetObjectLinearVelocity}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetObjectLinearVelocity()}{GetObjectLinearVelocity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector2}{Vector2}} Engine\+::\+Get\+Object\+Linear\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Get the velocity of the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & game object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+velocity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_abd4919e260db1d0f3efc09bcd27a58ae}\label{class_engine_abd4919e260db1d0f3efc09bcd27a58ae}} 
+\index{Engine@{Engine}!GetPhysicalEngine@{GetPhysicalEngine}}
+\index{GetPhysicalEngine@{GetPhysicalEngine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetPhysicalEngine()}{GetPhysicalEngine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics_engine}{Physics\+Engine}}$\ast$ Engine\+::\+Get\+Physical\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+a pointer to the physical engine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_engine_a5224162b8dc294c407d58ae19d276298}\label{class_engine_a5224162b8dc294c407d58ae19d276298}} 
+\index{Engine@{Engine}!Halt@{Halt}}
+\index{Halt@{Halt}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Halt()}{Halt()}}
+{\footnotesize\ttfamily void Engine\+::\+Halt (\begin{DoxyParamCaption}\item[{int}]{time }\end{DoxyParamCaption})}
+
+/brief Halt the engine for some time
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_aec39767a08447f4e7d8840d45645605c}\label{class_engine_aec39767a08447f4e7d8840d45645605c}} 
+\index{Engine@{Engine}!SetGravity@{SetGravity}}
+\index{SetGravity@{SetGravity}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetGravity()}{SetGravity()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Gravity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{gravity }\end{DoxyParamCaption})}
+
+
+
+Sets gravity of the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gravity} & a vector represents direction and magnitude of the gravity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_a0943ac23088e9a9722b89009097b144e}\label{class_engine_a0943ac23088e9a9722b89009097b144e}} 
+\index{Engine@{Engine}!SetObjectDensity@{SetObjectDensity}}
+\index{SetObjectDensity@{SetObjectDensity}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetObjectDensity()}{SetObjectDensity()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Object\+Density (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{obj,  }\item[{float}]{density }\end{DoxyParamCaption})}
+
+
+
+Set object density. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em density} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_a69233cfa288a2c104d78017cd4fa9ba5}\label{class_engine_a69233cfa288a2c104d78017cd4fa9ba5}} 
+\index{Engine@{Engine}!SetObjectFriction@{SetObjectFriction}}
+\index{SetObjectFriction@{SetObjectFriction}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetObjectFriction()}{SetObjectFriction()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Object\+Friction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{obj,  }\item[{float}]{friction }\end{DoxyParamCaption})}
+
+
+
+Set object friction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+{\em friction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_af81ebe9cec76108c7502aa01a1c1f3fd}\label{class_engine_af81ebe9cec76108c7502aa01a1c1f3fd}} 
+\index{Engine@{Engine}!SetObjectGravityScale@{SetObjectGravityScale}}
+\index{SetObjectGravityScale@{SetObjectGravityScale}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetObjectGravityScale()}{SetObjectGravityScale()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Object\+Gravity\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{obj,  }\item[{float}]{scale }\end{DoxyParamCaption})}
+
+/brief Set the gravity scale for an object
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & game object \\
+\hline
+{\em scale} & gravity scale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_a6f89d8c95778ae1f317929b93de15e81}\label{class_engine_a6f89d8c95778ae1f317929b93de15e81}} 
+\index{Engine@{Engine}!SetObjectLinearVelocity@{SetObjectLinearVelocity}}
+\index{SetObjectLinearVelocity@{SetObjectLinearVelocity}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetObjectLinearVelocity()}{SetObjectLinearVelocity()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Object\+Linear\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{obj,  }\item[{\mbox{\hyperlink{class_vector2}{Vector2}}}]{v }\end{DoxyParamCaption})}
+
+/brief Set the velocity of the object
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & game object \\
+\hline
+{\em v} & velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_engine_a98e06146d477649192b1f204e9b61e0a}\label{class_engine_a98e06146d477649192b1f204e9b61e0a}} 
+\index{Engine@{Engine}!SetScaleFactor@{SetScaleFactor}}
+\index{SetScaleFactor@{SetScaleFactor}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{SetScaleFactor()}{SetScaleFactor()}}
+{\footnotesize\ttfamily void Engine\+::\+Set\+Scale\+Factor (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Sets the scale factor of the world. If the game is tile-\/based, it should numerically be the width of a tile. It should be set before adding a game object in the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Engine.\+hpp\end{DoxyCompactItemize}

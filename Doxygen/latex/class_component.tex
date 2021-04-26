@@ -1,0 +1,85 @@
+\hypertarget{class_component}{}\doxysection{Component Class Reference}
+\label{class_component}\index{Component@{Component}}
+
+
+base class of components  
+
+
+
+
+{\ttfamily \#include $<$Component.\+hpp$>$}
+
+Inheritance diagram for Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+\mbox{\hyperlink{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ab8378fa275af98e568a7e91d33d867af}\label{class_component_ab8378fa275af98e568a7e91d33d867af}} 
+\mbox{\hyperlink{class_component_ab8378fa275af98e568a7e91d33d867af}{$\sim$\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_a3f57807787e0015833ccffd83fb63d14}\label{class_component_a3f57807787e0015833ccffd83fb63d14}} 
+virtual void \mbox{\hyperlink{class_component_a3f57807787e0015833ccffd83fb63d14}{Start}} ()
+\begin{DoxyCompactList}\small\item\em run at the first frame of game \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_component_a002dadaf63d7d6aacb7ec89e62df7e0e}{Update}} (int dt)
+\begin{DoxyCompactList}\small\item\em run at each frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aa01692c6b2244621e9ab2b56ceedcf5c}\label{class_component_aa01692c6b2244621e9ab2b56ceedcf5c}} 
+virtual void \mbox{\hyperlink{class_component_aa01692c6b2244621e9ab2b56ceedcf5c}{Render}} ()
+\begin{DoxyCompactList}\small\item\em render on screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_component_a361d380384965b33a04096075ea9cdf7}{game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Get the owner of this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a715fc40771d21d6d43d8209dd5c9810a}\label{class_component_a715fc40771d21d6d43d8209dd5c9810a}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ {\bfseries owner} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+base class of components 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_component_a361d380384965b33a04096075ea9cdf7}\label{class_component_a361d380384965b33a04096075ea9cdf7}} 
+\index{Component@{Component}!gameObject@{gameObject}}
+\index{gameObject@{gameObject}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{gameObject()}{gameObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}}$\ast$ Component\+::game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the owner of this component. 
+
+\begin{DoxyReturn}{Returns}
+owner as a \mbox{\hyperlink{class_game_object}{Game\+Object}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_component_a002dadaf63d7d6aacb7ec89e62df7e0e}\label{class_component_a002dadaf63d7d6aacb7ec89e62df7e0e}} 
+\index{Component@{Component}!Update@{Update}}
+\index{Update@{Update}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+run at each frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & duration time between each frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_transform_a314828d7ca05056d4ea51561c73d0692}{Transform}}, \mbox{\hyperlink{class_sprite_renderer_a49837ff60a785036ef125726536eed55}{Sprite\+Renderer}}, \mbox{\hyperlink{class_collider_ac3c09d7d8ffad8040f19a2b269cb11f2}{Collider}}, and \mbox{\hyperlink{class_animator_a733b8130a14cee6557a37b8014ecfc13}{Animator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Component/Component.\+hpp\end{DoxyCompactItemize}

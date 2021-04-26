@@ -1,0 +1,268 @@
+\hypertarget{class_input_handler}{}\doxysection{Input\+Handler Class Reference}
+\label{class_input_handler}\index{InputHandler@{InputHandler}}
+
+
+class to handle all the user inputs.  
+
+
+
+
+{\ttfamily \#include $<$Input\+Handler.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_handler_a4d3cd7c03e3ff1db66a8cd235d9e32c6}\label{class_input_handler_a4d3cd7c03e3ff1db66a8cd235d9e32c6}} 
+{\bfseries Input\+Handler} (\mbox{\hyperlink{class_input_handler}{Input\+Handler}} const \&)=default
+\item 
+\mbox{\Hypertarget{class_input_handler_ad4eb59e00696c6bd8051905e4e2aeb88}\label{class_input_handler_ad4eb59e00696c6bd8051905e4e2aeb88}} 
+\mbox{\hyperlink{class_input_handler}{Input\+Handler}} \& {\bfseries operator=} (\mbox{\hyperlink{class_input_handler}{Input\+Handler}} const \&)=default
+\item 
+void \mbox{\hyperlink{class_input_handler_aa9a8b9c5b225a7f4dc6e699f539051c4}{Key\+Down}} (int key)
+\begin{DoxyCompactList}\small\item\em Process key down event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_input_handler_a6f1cf51d5bce7d091048ec5d9897a7cc}{Key\+Up}} (int key)
+\begin{DoxyCompactList}\small\item\em Process key up event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_input_handler_a07b9981fe82caa88cf1d10ab166198e7}{Mouse\+Down}} (int button)
+\begin{DoxyCompactList}\small\item\em Process mouse button down event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_input_handler_a312506596b9ce6716bfff0d7a2c50920}{Mouse\+Up}} (int button)
+\begin{DoxyCompactList}\small\item\em Process mouse button down event. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_ae382965ddb80a5a202fa5226ffee766b}{Query\+Key\+Down}} (Key\+Code key)
+\begin{DoxyCompactList}\small\item\em Get key down state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_a29c3229bb406b43daa4310c5a606ccd5}{Query\+Key\+Up}} (Key\+Code key)
+\begin{DoxyCompactList}\small\item\em Get key up state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_a2901cce60c51017cdbd8ba908dec443e}{Query\+Mouse\+Down}} (Mouse\+Button button)
+\begin{DoxyCompactList}\small\item\em Get mouse button down state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_a022831aa8fdf0a5807a0b820a967cb4d}{Query\+Mouse\+Up}} (Mouse\+Button button)
+\begin{DoxyCompactList}\small\item\em Get mouse button up state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_input_handler_a69e8be48b8716cf7132cc36f27b1cc8a}\label{class_input_handler_a69e8be48b8716cf7132cc36f27b1cc8a}} 
+void \mbox{\hyperlink{class_input_handler_a69e8be48b8716cf7132cc36f27b1cc8a}{Reset\+Input\+Signal}} ()
+\begin{DoxyCompactList}\small\item\em Reset all signals to false. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_a5b39518adf4526dd66f5bf3e6616a7d2}{Get\+Key\+Down}} (Key\+Code key)
+\begin{DoxyCompactList}\small\item\em Whether the certain key is down. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_acb7fd5f29bb147b9f50adb5a6a8a830e}{Get\+Key\+Up}} (Key\+Code key)
+\begin{DoxyCompactList}\small\item\em Whether the certain key is up. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_a01136680e04058a027f29170b73c351f}{Get\+Mouse\+Down}} (Mouse\+Button button)
+\begin{DoxyCompactList}\small\item\em Whether the certain mouse button is down. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_input_handler_a8aec4e67af45f262e8b0b5768946a135}{Get\+Mouse\+Up}} (Mouse\+Button button)
+\begin{DoxyCompactList}\small\item\em Whether the certain mouse button is up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_input_handler_ae0cb8b5bd8aa63e0c0481a3ddc65810d}\label{class_input_handler_ae0cb8b5bd8aa63e0c0481a3ddc65810d}} 
+static \mbox{\hyperlink{class_input_handler}{Input\+Handler}} \& \mbox{\hyperlink{class_input_handler_ae0cb8b5bd8aa63e0c0481a3ddc65810d}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Singleton instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class to handle all the user inputs. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_input_handler_a5b39518adf4526dd66f5bf3e6616a7d2}\label{class_input_handler_a5b39518adf4526dd66f5bf3e6616a7d2}} 
+\index{InputHandler@{InputHandler}!GetKeyDown@{GetKeyDown}}
+\index{GetKeyDown@{GetKeyDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{GetKeyDown()}{GetKeyDown()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Get\+Key\+Down (\begin{DoxyParamCaption}\item[{Key\+Code}]{key }\end{DoxyParamCaption})}
+
+
+
+Whether the certain key is down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Enum of keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the key is down. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_handler_acb7fd5f29bb147b9f50adb5a6a8a830e}\label{class_input_handler_acb7fd5f29bb147b9f50adb5a6a8a830e}} 
+\index{InputHandler@{InputHandler}!GetKeyUp@{GetKeyUp}}
+\index{GetKeyUp@{GetKeyUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{GetKeyUp()}{GetKeyUp()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Get\+Key\+Up (\begin{DoxyParamCaption}\item[{Key\+Code}]{key }\end{DoxyParamCaption})}
+
+
+
+Whether the certain key is up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Enum of keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the key is up. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_handler_a01136680e04058a027f29170b73c351f}\label{class_input_handler_a01136680e04058a027f29170b73c351f}} 
+\index{InputHandler@{InputHandler}!GetMouseDown@{GetMouseDown}}
+\index{GetMouseDown@{GetMouseDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{GetMouseDown()}{GetMouseDown()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Get\+Mouse\+Down (\begin{DoxyParamCaption}\item[{Mouse\+Button}]{button }\end{DoxyParamCaption})}
+
+
+
+Whether the certain mouse button is down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Enum of mouse buttons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the mouse button is down. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_handler_a8aec4e67af45f262e8b0b5768946a135}\label{class_input_handler_a8aec4e67af45f262e8b0b5768946a135}} 
+\index{InputHandler@{InputHandler}!GetMouseUp@{GetMouseUp}}
+\index{GetMouseUp@{GetMouseUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{GetMouseUp()}{GetMouseUp()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Get\+Mouse\+Up (\begin{DoxyParamCaption}\item[{Mouse\+Button}]{button }\end{DoxyParamCaption})}
+
+
+
+Whether the certain mouse button is up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Enum of mouse buttons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the mouse button is up. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_handler_aa9a8b9c5b225a7f4dc6e699f539051c4}\label{class_input_handler_aa9a8b9c5b225a7f4dc6e699f539051c4}} 
+\index{InputHandler@{InputHandler}!KeyDown@{KeyDown}}
+\index{KeyDown@{KeyDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{KeyDown()}{KeyDown()}}
+{\footnotesize\ttfamily void Input\+Handler\+::\+Key\+Down (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Process key down event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of keys. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_input_handler_a6f1cf51d5bce7d091048ec5d9897a7cc}\label{class_input_handler_a6f1cf51d5bce7d091048ec5d9897a7cc}} 
+\index{InputHandler@{InputHandler}!KeyUp@{KeyUp}}
+\index{KeyUp@{KeyUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{KeyUp()}{KeyUp()}}
+{\footnotesize\ttfamily void Input\+Handler\+::\+Key\+Up (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Process key up event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of keys. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_input_handler_a07b9981fe82caa88cf1d10ab166198e7}\label{class_input_handler_a07b9981fe82caa88cf1d10ab166198e7}} 
+\index{InputHandler@{InputHandler}!MouseDown@{MouseDown}}
+\index{MouseDown@{MouseDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{MouseDown()}{MouseDown()}}
+{\footnotesize\ttfamily void Input\+Handler\+::\+Mouse\+Down (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})}
+
+
+
+Process mouse button down event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of mouse buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_input_handler_a312506596b9ce6716bfff0d7a2c50920}\label{class_input_handler_a312506596b9ce6716bfff0d7a2c50920}} 
+\index{InputHandler@{InputHandler}!MouseUp@{MouseUp}}
+\index{MouseUp@{MouseUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{MouseUp()}{MouseUp()}}
+{\footnotesize\ttfamily void Input\+Handler\+::\+Mouse\+Up (\begin{DoxyParamCaption}\item[{int}]{button }\end{DoxyParamCaption})}
+
+
+
+Process mouse button down event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of mouse buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_input_handler_ae382965ddb80a5a202fa5226ffee766b}\label{class_input_handler_ae382965ddb80a5a202fa5226ffee766b}} 
+\index{InputHandler@{InputHandler}!QueryKeyDown@{QueryKeyDown}}
+\index{QueryKeyDown@{QueryKeyDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{QueryKeyDown()}{QueryKeyDown()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Query\+Key\+Down (\begin{DoxyParamCaption}\item[{Key\+Code}]{key }\end{DoxyParamCaption})}
+
+
+
+Get key down state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the key is down. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_handler_a29c3229bb406b43daa4310c5a606ccd5}\label{class_input_handler_a29c3229bb406b43daa4310c5a606ccd5}} 
+\index{InputHandler@{InputHandler}!QueryKeyUp@{QueryKeyUp}}
+\index{QueryKeyUp@{QueryKeyUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{QueryKeyUp()}{QueryKeyUp()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Query\+Key\+Up (\begin{DoxyParamCaption}\item[{Key\+Code}]{key }\end{DoxyParamCaption})}
+
+
+
+Get key up state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the key is up. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_handler_a2901cce60c51017cdbd8ba908dec443e}\label{class_input_handler_a2901cce60c51017cdbd8ba908dec443e}} 
+\index{InputHandler@{InputHandler}!QueryMouseDown@{QueryMouseDown}}
+\index{QueryMouseDown@{QueryMouseDown}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{QueryMouseDown()}{QueryMouseDown()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Query\+Mouse\+Down (\begin{DoxyParamCaption}\item[{Mouse\+Button}]{button }\end{DoxyParamCaption})}
+
+
+
+Get mouse button down state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of mouse buttons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the mouse button is down. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_input_handler_a022831aa8fdf0a5807a0b820a967cb4d}\label{class_input_handler_a022831aa8fdf0a5807a0b820a967cb4d}} 
+\index{InputHandler@{InputHandler}!QueryMouseUp@{QueryMouseUp}}
+\index{QueryMouseUp@{QueryMouseUp}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{QueryMouseUp()}{QueryMouseUp()}}
+{\footnotesize\ttfamily bool Input\+Handler\+::\+Query\+Mouse\+Up (\begin{DoxyParamCaption}\item[{Mouse\+Button}]{button }\end{DoxyParamCaption})}
+
+
+
+Get mouse button up state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & enum of mouse buttons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the mouse button is up. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Input\+Handler.\+hpp\end{DoxyCompactItemize}

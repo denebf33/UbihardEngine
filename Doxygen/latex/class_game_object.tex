@@ -1,0 +1,260 @@
+\hypertarget{class_game_object}{}\doxysection{Game\+Object Class Reference}
+\label{class_game_object}\index{GameObject@{GameObject}}
+
+
+class of all game objects  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_ac1dd97550b282de2ebc535d073bf17bc}{Game\+Object}} (SDL\+\_\+\+Renderer $\ast$renderer, \mbox{\hyperlink{class_physics_engine}{Physics\+Engine}} $\ast$physics\+Engine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_aa27714b4172ebff2f7cddcf63b325ac7}\label{class_game_object_aa27714b4172ebff2f7cddcf63b325ac7}} 
+void \mbox{\hyperlink{class_game_object_aa27714b4172ebff2f7cddcf63b325ac7}{Start}} ()
+\begin{DoxyCompactList}\small\item\em called in the first frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_abad2c0244e7bcd94eace226782193fe1}{Update}} (int dt)
+\begin{DoxyCompactList}\small\item\em called every frame \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a554078170496d6fc31af134e76e1e1bd}\label{class_game_object_a554078170496d6fc31af134e76e1e1bd}} 
+void \mbox{\hyperlink{class_game_object_a554078170496d6fc31af134e76e1e1bd}{Render}} ()
+\begin{DoxyCompactList}\small\item\em Draw the object. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{class_game_object_a1f6ed57aa9244de1072bd79326e44665}{Get\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Get the renderer of this game object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_aaef9c811ee00f3285c9161dc53ec91f3}{Set\+Renderer}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Set renderer of this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a6de86477e37962bcd4738b09c1c706aa}{Add\+Component}} (\mbox{\hyperlink{class_component}{Component}} $\ast$component)
+\begin{DoxyCompactList}\small\item\em add component to this game\+Object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_abf1959fad10ea04673a182029f1f81b9}\label{class_game_object_abf1959fad10ea04673a182029f1f81b9}} 
+void \mbox{\hyperlink{class_game_object_abf1959fad10ea04673a182029f1f81b9}{Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy a game\+Object, but not release the memory until game ends. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a58644369da723bef9926511296531809}\label{class_game_object_a58644369da723bef9926511296531809}} 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{class_game_object_a58644369da723bef9926511296531809}{Get\+Component}} ()
+\begin{DoxyCompactList}\small\item\em get a certain type of component from this game\+Object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform}{Transform}} $\ast$ \mbox{\hyperlink{class_game_object_a5cc5b709bc2a4b5f933ce8dcd353d18b}{Get\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Get transform component of current object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sprite_renderer}{Sprite\+Renderer}} $\ast$ \mbox{\hyperlink{class_game_object_afba7fc84e20767789e12265a4960f226}{Get\+Sprite\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Get sprite renderer component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animator}{Animator}} $\ast$ \mbox{\hyperlink{class_game_object_a5d3de818999b6ca6c4fc0266b058a560}{Get\+Animator}} ()
+\begin{DoxyCompactList}\small\item\em Get animator component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collider}{Collider}} $\ast$ \mbox{\hyperlink{class_game_object_a8d028041856d5f7c27e4e5e714aff3a5}{Get\+Collider}} ()
+\begin{DoxyCompactList}\small\item\em Get collider component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_a7fad3ff7ba88b0ace20809ba1147a471}{Set\+Physical\+Body}} (b2\+Body $\ast$body)
+\begin{DoxyCompactList}\small\item\em the tag of this game\+Ojbect \end{DoxyCompactList}\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_game_object_a862c0055ddfff0781ae75d07dcefcac4}{Get\+Physical\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Get the physical body. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_physics_engine}{Physics\+Engine}} $\ast$ \mbox{\hyperlink{class_game_object_aca02c350eac80244de0f36b053753cc9}{Get\+Physical\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Get the physical engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_ae8c649b2d00e533c0688fb2efc090a52}{Set\+Sensor}} (bool flag)
+\begin{DoxyCompactList}\small\item\em set sensor state of the physics engine \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_accc1ba3b2b238eab83bef0f3c84ca07e}\label{class_game_object_accc1ba3b2b238eab83bef0f3c84ca07e}} 
+bool \mbox{\hyperlink{class_game_object_accc1ba3b2b238eab83bef0f3c84ca07e}{m\+\_\+\+Destroied}} = false
+\begin{DoxyCompactList}\small\item\em whether the game\+Object is destroyed \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a66891b8bfd67373dde0155ae7808bbb4}\label{class_game_object_a66891b8bfd67373dde0155ae7808bbb4}} 
+std\+::string {\bfseries tag} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class of all game objects 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_ac1dd97550b282de2ebc535d073bf17bc}\label{class_game_object_ac1dd97550b282de2ebc535d073bf17bc}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{\mbox{\hyperlink{class_physics_engine}{Physics\+Engine}} $\ast$}]{physics\+Engine }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$renderer} & current renderer \\
+\hline
+{\em $\ast$physics\+Engine} & current physics engine \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_a6de86477e37962bcd4738b09c1c706aa}\label{class_game_object_a6de86477e37962bcd4738b09c1c706aa}} 
+\index{GameObject@{GameObject}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} $\ast$}]{component }\end{DoxyParamCaption})}
+
+
+
+add component to this game\+Object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & compoenet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a5d3de818999b6ca6c4fc0266b058a560}\label{class_game_object_a5d3de818999b6ca6c4fc0266b058a560}} 
+\index{GameObject@{GameObject}!GetAnimator@{GetAnimator}}
+\index{GetAnimator@{GetAnimator}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetAnimator()}{GetAnimator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_animator}{Animator}}$\ast$ Game\+Object\+::\+Get\+Animator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get animator component. 
+
+\begin{DoxyReturn}{Returns}
+pointer to a animator component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a8d028041856d5f7c27e4e5e714aff3a5}\label{class_game_object_a8d028041856d5f7c27e4e5e714aff3a5}} 
+\index{GameObject@{GameObject}!GetCollider@{GetCollider}}
+\index{GetCollider@{GetCollider}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetCollider()}{GetCollider()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collider}{Collider}}$\ast$ Game\+Object\+::\+Get\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get collider component. 
+
+\begin{DoxyReturn}{Returns}
+pointer to a collider component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a862c0055ddfff0781ae75d07dcefcac4}\label{class_game_object_a862c0055ddfff0781ae75d07dcefcac4}} 
+\index{GameObject@{GameObject}!GetPhysicalBody@{GetPhysicalBody}}
+\index{GetPhysicalBody@{GetPhysicalBody}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetPhysicalBody()}{GetPhysicalBody()}}
+{\footnotesize\ttfamily b2\+Body$\ast$ Game\+Object\+::\+Get\+Physical\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the physical body. 
+
+\begin{DoxyReturn}{Returns}
+physical body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_aca02c350eac80244de0f36b053753cc9}\label{class_game_object_aca02c350eac80244de0f36b053753cc9}} 
+\index{GameObject@{GameObject}!GetPhysicalEngine@{GetPhysicalEngine}}
+\index{GetPhysicalEngine@{GetPhysicalEngine}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetPhysicalEngine()}{GetPhysicalEngine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics_engine}{Physics\+Engine}}$\ast$ Game\+Object\+::\+Get\+Physical\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the physical engine. 
+
+\begin{DoxyReturn}{Returns}
+physical engine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a1f6ed57aa9244de1072bd79326e44665}\label{class_game_object_a1f6ed57aa9244de1072bd79326e44665}} 
+\index{GameObject@{GameObject}!GetRenderer@{GetRenderer}}
+\index{GetRenderer@{GetRenderer}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetRenderer()}{GetRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer$\ast$ Game\+Object\+::\+Get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the renderer of this game object. 
+
+\begin{DoxyReturn}{Returns}
+renderer of this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_afba7fc84e20767789e12265a4960f226}\label{class_game_object_afba7fc84e20767789e12265a4960f226}} 
+\index{GameObject@{GameObject}!GetSpriteRenderer@{GetSpriteRenderer}}
+\index{GetSpriteRenderer@{GetSpriteRenderer}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetSpriteRenderer()}{GetSpriteRenderer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sprite_renderer}{Sprite\+Renderer}}$\ast$ Game\+Object\+::\+Get\+Sprite\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get sprite renderer component. 
+
+\begin{DoxyReturn}{Returns}
+pointer to a sprite renderer component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a5cc5b709bc2a4b5f933ce8dcd353d18b}\label{class_game_object_a5cc5b709bc2a4b5f933ce8dcd353d18b}} 
+\index{GameObject@{GameObject}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetTransform()}{GetTransform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}}$\ast$ Game\+Object\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get transform component of current object. 
+
+\begin{DoxyReturn}{Returns}
+pointer to a transform component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a7fad3ff7ba88b0ace20809ba1147a471}\label{class_game_object_a7fad3ff7ba88b0ace20809ba1147a471}} 
+\index{GameObject@{GameObject}!SetPhysicalBody@{SetPhysicalBody}}
+\index{SetPhysicalBody@{SetPhysicalBody}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetPhysicalBody()}{SetPhysicalBody()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Physical\+Body (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{body }\end{DoxyParamCaption})}
+
+
+
+the tag of this game\+Ojbect 
+
+Set the physical body of the object
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_aaef9c811ee00f3285c9161dc53ec91f3}\label{class_game_object_aaef9c811ee00f3285c9161dc53ec91f3}} 
+\index{GameObject@{GameObject}!SetRenderer@{SetRenderer}}
+\index{SetRenderer@{SetRenderer}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetRenderer()}{SetRenderer()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Set renderer of this object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & target renderer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_ae8c649b2d00e533c0688fb2efc090a52}\label{class_game_object_ae8c649b2d00e533c0688fb2efc090a52}} 
+\index{GameObject@{GameObject}!SetSensor@{SetSensor}}
+\index{SetSensor@{SetSensor}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetSensor()}{SetSensor()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Sensor (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+set sensor state of the physics engine 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flag} & target sensor state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_abad2c0244e7bcd94eace226782193fe1}\label{class_game_object_abad2c0244e7bcd94eace226782193fe1}} 
+\index{GameObject@{GameObject}!Update@{Update}}
+\index{Update@{Update}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{dt }\end{DoxyParamCaption})}
+
+
+
+called every frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & delta time of frames \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Object.\+hpp\end{DoxyCompactItemize}
